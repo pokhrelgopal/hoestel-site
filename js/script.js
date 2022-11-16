@@ -70,6 +70,17 @@ questions.forEach((question, index) => {
         icon[index].classList.toggle('fa-chevron-down');
         icon[index].classList.toggle('fa-chevron-up');
     })
-    // add animation 
 
+})
+
+// TABS for rooms
+const tabButtons = document.querySelectorAll('.tabButtonsRooms');
+const tabContent = document.querySelectorAll('.cont');
+// forEach 
+tabButtons.forEach((tab, index) => {
+    tab.addEventListener('click', function () {
+        console.log('hello');
+        tabContent[index].classList.toggle('hidden');
+        tabContent[index].classList.toggle('flex');
+    })
 })

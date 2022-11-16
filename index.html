@@ -4,6 +4,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="City Deluxe Boys Hostel - #1 Hostel in Kathmandu">
+        <meta property="og:site_name" content="City Deluxe Boys Hostel">
+        <meta property="og:url" content="https://citydeluxe.com.np">
+        <meta property="og:description"
+            content="City Deluxe Boys Hostel offers comfortable and affordable accommodation in Kathmandu, Nepal. Located in the heart of Putalisadak, New Plaza, City Deluxe is a great environment to stay in for students looking for a good quality hostel experience.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="img/citydeluxecover.jpg">
+        <meta property="og:image:alt" content="City Deluxe Boys Hostel">
+        <title>City Deluxe Boys Hostel - #1 Hostel in Kathmandu</title>
+        <meta name="description"
+            content="City Deluxe Boys Hostel offers comfortable and affordable accommodation in Kathmandu, Nepal. Located in the heart of Putalisadak, New Plaza, City Deluxe is a great environment to stay in for students looking for a good quality hostel experience.">
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -18,11 +29,20 @@
             })();
         </script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
     </head>
 
     <body>
         <nav class="text-white">
-            <div class="nav-container relative container px-auto p-6">
+            <div class="nav-container relative container mx-auto p-6">
                 <!-- flex container  -->
                 <div class="flex items-center justify-between">
                     <!-- logo  -->
@@ -35,7 +55,7 @@
                         <a href="#services--section" class="hover:underline hover:underline-offset-8">Facilities</a>
                         <a href="#about--section" class="hover:underline hover:underline-offset-8">About</a>
                         <a href="#pricing--section" class="hover:underline hover:underline-offset-8">Pricing</a>
-                        <a href="#" class="hover:underline hover:underline-offset-8">Rooms</a>
+                        <!-- <a href="#" class="hover:underline hover:underline-offset-8">Rooms</a> -->
                     </div>
                     <!-- button  -->
                     <a href="#contact-us"
@@ -460,7 +480,7 @@
                     technical issue? Want to send feedback about a beta feature? Need details about our Business
                     plan? Let us know.</p>
             </div>
-            <div class="container flex md:flex-row items-center justify-evenly">
+            <div class="container flex flex-col md:flex-row items-center justify-evenly">
                 <form class="space-y-6 w-full px-5 md:w-1/3" id="contact-form">
                     <div>
                         <label for="name" class="text-lg block mb-2 font-medium dark:text-gray-300">Full
@@ -489,8 +509,8 @@
                         onclick="sendMail()" value="Send" type="submit">Send
                     </button>
                 </form>
-                <div class="hidden space-y-8 map-container py-10 md:block">
-                    <iframe class="rounded-lg"
+                <div class="space-y-8 map-container py-10 md:block md:w-1/3">
+                    <iframe class="rounded-lg overflow-scroll p-0 md:overflow-hidden w-full"
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14129.87297781336!2d85.3238449!3d27.7028255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf525f740429dd00!2sCity%20Deluxe%20Boys%20Hostel!5e0!3m2!1sen!2snp!4v1668244777269!5m2!1sen!2snp"
                         width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
